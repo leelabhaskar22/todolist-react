@@ -1,0 +1,195 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1A1A1A;
+    scrollbar-width: thin;
+    scrollbar-color: #4caf50 #f1f1f1;
+  }
+  
+  .header_container {
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+    background: var(--Gray-700, #0D0D0D);
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
+  
+  h2 {
+    color: var(--Blue, #4EA8DE);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  
+  .add_container input {
+    outline: 0;
+    flex: 1;
+    border: 0;
+    width: 400px;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-700, #0D0D0D);
+    background: var(--Gray-500, #262626);
+    padding: 12px;
+    color: #fff;
+    gap: 16;
+  }
+  
+  .add_container .icon {
+    margin: 1px;
+  }
+  
+  .add_container button {
+    outline: 0;
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    cursor: pointer;
+    background-color: #1E6F9F;
+    border-radius: 30px;
+    padding: 12px 30px;
+    gap: 3px;
+    color: #F2F2F2;
+    margin: 5px;
+  }
+  
+  .checkmark {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .check button {
+    background-color: transparent;
+    border: 0;
+    padding: 4px;
+    color: #808080;
+    transition: 0.3s;
+  }
+  
+  .check button:hover {
+    background-color: #8080804a;
+    color: rgb(255, 58, 58);
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .check .icon {
+    color: #1E6F9F;
+  }
+  
+  header span {
+    color: var(--PurpleDark, #5E60CE);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  
+  .status_container span {
+    background-color: #333;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  
+  .add_container {
+    position: absolute;
+    bottom: -20px;
+    display: flex;
+  }
+  
+  .list_container {
+    display: flex;
+    overflow-y: scroll;
+    height: 317px;
+    flex-direction: column;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .container {
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .status_container {
+    margin: 5px;
+    color: #fff;
+    display: flex;
+    width: 700px;
+    color: var(--Blue, #4EA8DE);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .list_container .check {
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    width: 700px;
+    border-radius: 8px;
+    color: #fff;
+    justify-content: space-between;
+    border: 1px solid var(--Gray-400, #333);
+    background: var(--Gray-500, #262626);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  }
+  
+  .checkmark p {
+    word-break: break-all;
+  }
+  
+  .icon_color {
+    color: #5E60CE;
+    font-size: 22px;
+  }
+  
+/* 
+i will deal with out later
+@media screen and (max-width: 600px) {
+    .list_container {
+        display: none;
+    }
+    .add_container{
+        position: absolute;
+        bottom: 0;
+        margin: 15px;
+    }
+
+   
+    .add_container input{
+        outline: 0;
+        border: 0;
+        border-radius: 8px;
+        border: 1px solid var(--Gray-700, #0D0D0D);
+        background: var(--Gray-500, #262626);
+        padding: 12px;
+        margin: 15px;
+        color: #fff;
+  }
+  .add_container button{
+    display: none;
+  }
+} */
