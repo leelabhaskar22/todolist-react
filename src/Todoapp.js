@@ -53,7 +53,7 @@ const Todo = () => {
       <div className='container'>
         <div className='status_container'>
           <p>Total tasks: <span> {list.length + completedTasks.length}</span> </p>
-          <p>Completed <span> { completedTasks.length} of {  list.length }</span></p>
+          <p>Completed <span> { completedTasks.length} of {  list.length + completedTasks.length}</span></p>
         </div>
       <div className='list_container'>
           <ul>
