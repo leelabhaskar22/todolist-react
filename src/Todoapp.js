@@ -10,14 +10,13 @@ const Todo = () => {
     const handleadd = () =>{
         if(todo !== ''){
           const newlist = [...list,todo]
-          setList(newlist)
+          setList(newlist)  
           setTodo('')
         }
         else{
           alert('Please enter task')
         }
       }
-    
     const handleenter = (e) => {
         if(e.key === 'Enter'){
             handleadd();
